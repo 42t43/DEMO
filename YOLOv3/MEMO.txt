@@ -1,0 +1,19 @@
+tutorial video: https://www.youtube.com/watch?v=R0hipZXJjlI
+keywords: youtube yolo tutorial
+
+official yolo web site: https://pjreddie.com/darknet/yolo/
+keywords: google yolo darknet
+
+yolo tutorial web documentation: https://www.learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c/
+this site has python and c++ code for yolo
+
+file structure:
+part1
+--OD.py # run this file to activate yolo
+--yolo3.cfg # download from official website
+--yolo3.weights # download from official website
+--coco.names
+
+https://note.mu/yuki_t1992/n/nbf46f988bee0
+google cv.WINDOW_NORMAL
+motive: checked WINDOW_NORMAL function
