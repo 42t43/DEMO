@@ -25,3 +25,22 @@ Tutorial by Ivan Goncharov to run YOLOv3 object detection with python and opencv
 ### [Deep Learning based Object Detection using YOLOv3 with OpenCV ( Python / C++ )](https://www.learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c/)
 
 The article about how to implement yolo on your computer. This article show python and c++ codes with explanation for each function. 
+
+# Description
+
+### MNIST.ipynb
+
+My first machine learning program. I created this following tensorflow tutorial video at Scipy 2018 by google developers.  I tried to use tensorflow for a while ago but it was complicated (code uses concept of session and graph to perform machine learning) and I could not understand it. However, tensorflow got updates and it became much more user friendly recently. The code has been simplified greatly thanks to kerns implementation. It no longer uses session and graphs but uses layer structure to create neural network model. Simple Dense layer model can be wrote in less than 5 lines of codes which is capable of classifying MNIST datasets. This simple example really helped me to get started with tensorflow and machine learning. I was surprise especially at the fact that you do not need extreme coding knowledge to create simple classifier. I also discovered google Colab which is web-based programming environment where you can learn python programming without worrying about installation of python and various other libraries. I highly recommend google colab especially for beginners since these installation and setting development environment is one of the most difficult part.
+
+### DogvsCat.ipynb
+
+As I learned tensor flow with Scipy 2018 youtube video, I realized Youtube tutorials are one of the most useful resources to learn programming. So I started searching other machine learning tutorials on youtube and I discovered Deep Learning tutorial by sendex where he explained each code and wrote them from scratch so that you can see how these programmers think and write their own program. This DogvsCat.ipynb is based on sendex tutorial. This model is trained by thousand of pictures of dogs and cats provided by Microsoft to classify them. In this tutorial, I learned file structure of these training datasets and main classifying python file. Because this model uses convolutional layers and huge number of pictures, it took a while to train the model with CPU. Thus, I decided to use GPU to train the model. To use GPU, I needed GPU version of tensorflow which requires really complicated installation process involving downloading specific NVIDIA driver and Visual Studio c++ to configure them. However, the training time is reduced dramatically form 12 minute with CPU version to 1 minute with GPU version. I also tested various model with slight changes of number of layers and neurons to search the most efficient model (result DogvsCat/TensorBoard.png).  The results shows the model with 3 convolutional layer and no dense layer has highest 85% accuracy to classify Dog and Cat with 12500 sample pictures for each animals. As a test, I used picture of my dog and the model successfully classified my dog most of the time. It sometime failed to classify the image when animal is covered by object or picture is heavily blurred. After I finished this tutorial, I realized that machine learning involves preprocessing data more than adjusting network model. 
+
+### Diamond.ipynb
+
+I used pandas library to preprocess csv datasets for machine learning. This model predict the price of diamond based on all the other information provided by Kaggle datasets such as size, color, and condition of the diamond. The model is trained by using sklearn library as a regression model. 
+
+### YOLOv3/OD-tutorail.py
+
+After I watched ted talk about object detection (https://www.youtube.com/watch?v=Cgxsv1riJhI), I wanted to run that model on my computer. I discovered tutorial by Ivan Goncharov to run YOLOv3 object detection with python and opencv. I was surprise that yolo could run on my laptop and had decent frame rate (10~15 fps). I downloaded weight and configuration file from official website. I wrote main python program watching Ivan Goncharov tutorial. In this tutorial, I learned how to import already trained model and put detection box on video in realtime. I was surprise at how simple it is to use pre-trained model. Preprocessing video frame and putting detection box were more difficult to implement. 
+
