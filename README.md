@@ -44,3 +44,7 @@ I used pandas library to preprocess csv datasets for machine learning. This mode
 
 After I watched ted talk about object detection (https://www.youtube.com/watch?v=Cgxsv1riJhI), I wanted to run that model on my computer. I discovered tutorial by Ivan Goncharov to run YOLOv3 object detection with python and opencv. I was surprise that yolo could run on my laptop and had decent frame rate (10~15 fps). I downloaded weight and configuration file from official website. I wrote main python program watching Ivan Goncharov tutorial. In this tutorial, I learned how to import already trained model and put detection box on video in realtime. I was surprise at how simple it is to use pre-trained model. Preprocessing video frame and putting detection box were more difficult to implement. 
 
+### Radar.ipynb, Realtime-Detection.py
+
+This radar program is for high frequency radar at laboratory at my university.  Although this model only can distinguish whether there is nothing or metal stick in front of the radar,  this is the first machine learning program which I wrote without following tutorials. Since the radar stores data in csv file, I used pandas library to preprocess datasets. I also used matplotlib library to visualize datasets and implemented live graph to check radar’s wave data in real time (Realtime-Detection.py). In this program, I loaded trained model and preprocessed incoming data in realtime to make prediction in realtime. The model is in progress and I intend to gather more data to implement gesture recognition with the radar. 
+
